@@ -8,18 +8,16 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-}
-
 .container {
   max-width: 100vw;
   min-height: 100vh;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  display: flex;
   background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(248,191,191,0.01) 0%, rgba(238,140,140,0.1) 100%);
 }
+
 
 .gradient-btn {
   background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
@@ -29,6 +27,14 @@ body {
   background-image: url(../resources/images/bg-pattern-desktop.svg);
   object-fit: cover;
   background-repeat: no-repeat;
+  
+}
+
+.mediumScreen{
+  max-height: 800px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 
 .title {
