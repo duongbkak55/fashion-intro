@@ -1,16 +1,40 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(248,191,191,0.01) 0%, rgba(238,140,140,0.1) 100%);
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
+}
+
+.main-container {
+  background-image: url(../resources/images/bg-pattern-desktop.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.super-spacing {
+  letter-spacing: 0.3em;
 }
